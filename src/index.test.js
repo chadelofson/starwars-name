@@ -21,6 +21,14 @@ describe('starwars-names-cde', function () {
     describe('random', function() {
         it('should return a random item from the starWars.all', function () {
             expect(starWars.all).to.include(starWars.random())
-        })
+        });
+        
+        it('should return an array of random items if passed', function () {
+            var randomItems = starWars.random(3);
+            expect(randomItems).to.have.length(3);
+            randomItems.forEach(function (item) {
+                expect(starWars.all).to.include(item);
+            });
+        });
     });
 });
