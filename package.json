@@ -31,10 +31,16 @@
   },
   "devDependencies": {
     "chai": "4.2.0",
+    "ghooks": "2.0.4",
     "mocha": "6.2.0",
     "semantic-release": "^15.13.21"
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test:single"
+    }
   }
 }
