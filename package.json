@@ -37,7 +37,7 @@
     "ghooks": "2.0.4",
     "istanbul": "0.4.5",
     "mocha": "6.2.0",
-    "semantic-release": "^15.13.21"
+    "semantic-release": "^17.2.3"
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
